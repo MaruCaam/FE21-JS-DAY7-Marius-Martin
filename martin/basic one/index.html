@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper-container {
+          width: 100%;
+          height: 50%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+    <title>Home</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+                <p>Martin Maier Full-Stack Web Developer</p>
+                <img id="logo" class="animate__animated animate__bounce animate__infinite	infinite" src="img/logo.png" alt="logo">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/Phone.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/avatar.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/Debit_card_ATM.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/Taxify-Scooters.jpg" alt=""></div>
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            <h1>This is my first<br>website :D</h1>
+            <div id="row1">
+                <img id="img1" class="animate__animated animate__bounce animate__delay-2s" src="img/Phone.png" alt="phone">
+                <p>Samsung Galaxy S11/S20 Plus video leaks showing phone in real life!</p>
+            </div>
+            <div id="row2">
+                <div id="row2img2">
+                    <img id="img2" class="animate__animated animate__bounce animate__delay-1s" src="img/Debit_card_ATM.jpg" alt="debit card">
+                    <p>Police are investigating three ATM<br> explosions in two Florida counties</p>
+                </div>
+                <div id="row2img3">
+                    <img id="img3" class="animate__animated animate__bounce animate__delay-2s" src="img/Taxify-Scooters.jpg" alt="scooter">
+                    <p>E-scooter firm Bolt pulls out of 12 cities</p>
+                </div> 
+            </div>
+        </main>
+        <footer>
+            <div>
+                <img class="animate__animated animate__bounce animate__delay-3s" src="img/logo.png" alt="logo">
+                <p>Martin Maier CodeFactory 2020</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>
